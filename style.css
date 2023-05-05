@@ -180,3 +180,19 @@ body{
         top: 0%;
     }
 }
+@media only screen and (max-width: 400px){
+    .ProjectNum{
+        position: absolute;
+        font-family: "sigmar";
+        font-size: 2rem;
+        font-weight: 400;
+    
+        padding:30px;
+        top: 0%;
+    }
+}
+@media only screen and (max-width: 300px){
+    .ProjectNum{
+        display:none
+    }
+}

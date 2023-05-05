@@ -7,13 +7,16 @@
 }
 
 .one .ProjectNum{
-    position: absolute;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
     font-family: "sigmar";
     font-size: 3rem;
     font-weight: 400;
 
     padding:30px;
-    top: 0%;
+    top:0;
     color:burlywood;
     letter-spacing: 3px;
 
@@ -170,29 +173,20 @@ body{
     border-right: none;
 }
 @media only screen and (max-width: 500px){
-    .ProjectNum{
-        position: absolute;
-        font-family: "sigmar";
-        font-size: 2.5rem;
-        font-weight: 400;
-    
-        padding:30px;
-        top: 0%;
+    .one .ProjectNum{
+        display: none;
     }
 }
-@media only screen and (max-width: 400px){
-    .ProjectNum{
-        position: absolute;
-        font-family: "sigmar";
-        font-size: 2rem;
-        font-weight: 400;
-    
-        padding:30px;
-        top: 0%;
-    }
-}
-@media only screen and (max-width: 300px){
-    .ProjectNum{
-        display:none
+@media only screen and (max-width: 600px){
+    .one .ProjectNum{
+    position: absolute;
+    font-family: "sigmar";
+    font-size: 2rem;
+    font-weight: 400;
+
+    padding:30px;
+    top: 0%;
+    color:burlywood;
+    letter-spacing: none;
     }
 }

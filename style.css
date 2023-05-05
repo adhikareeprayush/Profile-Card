@@ -6,6 +6,20 @@
     box-sizing: border-box;
 }
 
+.one .ProjectNum{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-family: "sigmar";
+    font-size: 3rem;
+    font-weight: 400;
+
+    padding:30px;
+    top:0;
+    color:burlywood;
+    letter-spacing: 3px;
+
 }
 
 .one{
@@ -157,5 +171,10 @@ body{
 
 .data:last-child{
     border-right: none;
+}
+@media only screen and (max-width: 900px){
+    .one .ProjectNum{
+        display: none;
+    }
 }
 

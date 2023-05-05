@@ -177,16 +177,4 @@ body{
         display: none;
     }
 }
-@media only screen and (max-width: 600px){
-    .one .ProjectNum{
-    position: absolute;
-    font-family: "sigmar";
-    font-size: 2rem;
-    font-weight: 400;
 
-    padding:30px;
-    top: 0%;
-    color:burlywood;
-    letter-spacing: none;
-    }
-}

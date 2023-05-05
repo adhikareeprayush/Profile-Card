@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-.ProjectNum{
+.one .ProjectNum{
     position: absolute;
     font-family: "sigmar";
     font-size: 3rem;

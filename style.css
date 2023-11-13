@@ -172,6 +172,9 @@ body{
 .data:last-child{
     border-right: none;
 }
+
+
+/*Media Queries*/
 @media only screen and (max-width: 900px){
     .one .ProjectNum{
         display: none;

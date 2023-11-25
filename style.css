@@ -1,12 +1,29 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
-*{
+
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.one .ProjectNum{
+/* Styling for the container of Project #1 */
+.one {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 10px 10px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the Project Number within the .one container */
+.one .ProjectNum {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -14,36 +31,20 @@
     font-family: "sigmar";
     font-size: 3rem;
     font-weight: 400;
-
-    padding:30px;
-    top:0;
-    color:burlywood;
+    padding: 30px;
+    top: 0;
+    color: burlywood;
     letter-spacing: 3px;
-
 }
 
-.one{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    height:100vh;
-    width:100%;
-    padding: 10px 10px;
-    background: white;
-
-    /* background: url(images/sec-1.jpg)no-repeat;
-    background-size: cover;
-    background-position: center; */
-    justify-content: center;
-    align-items: center;
-}
-
-body{
+/* Resetting margin and padding for the entire body */
+body {
     margin: 0;
     padding: 0;
 }
 
-.image{
+/* Styling for the profile image container */
+.image {
     position: relative;
     height: 150px;
     width: 150px;
@@ -53,7 +54,8 @@ body{
     margin-bottom: 10px;
 }
 
-.profile-card{
+/* Styling for the profile card container */
+.profile-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,11 +64,12 @@ body{
     background: white;
     border-radius: 24px;
     padding: 25px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
-.profile-card::before{
+/* Styling for the pseudo-element before .profile-card */
+.profile-card::before {
     content: ' ';
     position: absolute;
     height: 36%;
@@ -76,41 +79,44 @@ body{
     background-color: burlywood;
 }
 
-.image .profile-img{
+/* Styling for the profile image within .image */
+.image .profile-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-
     border: 3px solid #fff;
 }
 
-.profile-card .text-data{
+/* Styling for text data within the profile card */
+.profile-card .text-data {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #333;
 }
 
-.text-data .name{
+/* Styling for the name within .text-data */
+.text-data .name {
     font-size: 22px;
     font-weight: 500px;
 }
 
-.text-data .job{
+/* Styling for the job title within .text-data */
+.text-data .job {
     font-size: 15px;
     font-weight: 400px;
 }
 
-.profile-card .media-buttons{
+/* Styling for the media buttons within the profile card */
+.profile-card .media-buttons {
     display: flex;
     align-items: center;
     margin-top: 15px;
-
 }
 
-
-.media-buttons .link{
+/* Styling for each social media link button */
+.media-buttons .link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,15 +130,15 @@ body{
     text-decoration: none;
 }
 
-
-.profile-card .buttons{
+/* Styling for action buttons within the profile card */
+.profile-card .buttons {
     display: flex;
     align-items: center;
     margin-top: 25px;
-
 }
 
-.buttons .button{
+/* Styling for each button within .buttons */
+.buttons .button {
     border: none;
     color: #fff;
     font-size: 14px;
@@ -145,23 +151,27 @@ body{
     transition: all 0.3s ease;
 }
 
-.buttons .button:hover{
+/* Hover effect for buttons */
+.buttons .button:hover {
     background-color: rgb(226, 163, 80);
 }
 
-.profile-card .analytics{
+/* Styling for the analytics data within the profile card */
+.profile-card .analytics {
     display: flex;
-    align-items: cenetr;
+    align-items: center;
     margin-top: 25px;
 }
 
-.data i{
+/* Styling for icons within analytics data */
+.data i {
     font-size: 18px;
     margin-right: 6px;
     cursor: pointer;
 }
 
-.analytics .data{
+/* Styling for each data element within analytics */
+.analytics .data {
     display: flex;
     align-items: center;
     color: #333;
@@ -169,14 +179,14 @@ body{
     border-right: 2px solid #e7e7e7;
 }
 
-.data:last-child{
+/* Removing right border for the last data element */
+.data:last-child {
     border-right: none;
 }
 
-
-/*Media Queries*/
-@media only screen and (max-width: 900px){
-    .one .ProjectNum{
+/* Media Query for screens with a maximum width of 900px */
+@media only screen and (max-width: 900px) {
+    .one .ProjectNum {
         display: none;
     }
 }
